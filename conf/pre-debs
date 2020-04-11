@@ -15,16 +15,11 @@ sid()
         install $@
 }
 
-script -c "curl -sL https://deb.nodesource.com/setup_4.x | bash -" /dev/null
+script -c "curl -sL https://deb.nodesource.com/setup_8.x | bash -" /dev/null
 apt-get update
 install git
 install screen
 install rdiff-backup
 install nodejs
-install mysql-server
-install openjdk-7-jre
-install supervisor
+install openjdk-8-jre
 install build-essential
-
-#echo "deb http://http.us.debian.org/debian sid main" >> /etc/apt/sources.list.d/sources.list
-#sid python2.7
